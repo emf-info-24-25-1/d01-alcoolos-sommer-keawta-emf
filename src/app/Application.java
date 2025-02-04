@@ -1,17 +1,19 @@
 package app;
 
-public class Application {
-    
-        //
-        //              )        (                 ) (           (         (
-        //           ( /(   *   ))\ )        (  ( /( )\ )        )\ )  (   )\ )
-        //     (   ( )\())` )  /(()/((       )\ )\()|()/(  (    (()/(  )\ (()/(
-        //     )\  )((_)\  ( )(_))(_))\    (((_|(_)\ /(_)) )\    /(_)|((_) /(_))
-        //    ((_)((_)((_)(_(_()|_))((_)   )\___ ((_|_))_ ((_)  (_)) )\___(_))
-        //    __   _____ _____ ___ ___    ___ ___  ___  ___   ___ ___ ___   _
-        //    \ \ / / _ \_   _| _ \ __|  / __/ _ \|   \| __| |_ _/ __|_ _| | |
-        //     \ V / (_) || | |   / _|  | (_| (_) | |) | _|   | | (__ | |  |_|
-        //      \_/ \___/ |_| |_|_\___|  \___\___/|___/|___| |___\___|___| (_)
-        //
+import models.Ami;
 
+public class Application {
+        public static void main(String[] args) {
+                Ami ami01 = new Ami("Maxime", 2);
+                Ami ami02 = new Ami("Valentin", 5);
+                Ami ami03 = new Ami("Logan", 10);
+
+                ami01.montreAmi();
+                ami02.montreAmi();
+                ami03.montreAmi();
+
+                ami01.boitUneBiere();
+                ami01.boitUneBiere();
+                ami01.boitUneBiere();
+        }
 }
