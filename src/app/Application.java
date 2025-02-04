@@ -1,5 +1,7 @@
 package app;
 
+import models.Ami;
+
 public class Application {
         public static void main(String[] args) {
                 Ami ami01 = new Ami("Maxime", 2);
@@ -13,6 +15,5 @@ public class Application {
                 ami01.boitUneBiere();
                 ami01.boitUneBiere();
                 ami01.boitUneBiere();
-
         }
 }
